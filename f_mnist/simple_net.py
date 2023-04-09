@@ -1,7 +1,7 @@
-from models import perceptron, simple_cnn
 import tensorflow_datasets as tfd
 import math
-from utils import show_sample
+
+from f_mnist.utils import show_sample
 
 
 class SimpleNet:

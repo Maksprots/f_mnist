@@ -1,6 +1,6 @@
-from  models import perceptron, simple_cnn
-from simple_net import SimpleNet
-from vgg_16 import Vgg16FMnist
+from f_mnist.models import perceptron, simple_cnn
+from f_mnist.simple_net import SimpleNet
+from f_mnist.vgg_16 import Vgg16FMnist
 
 
 def main():
@@ -22,8 +22,7 @@ def main():
     v_a = vgg16.testing()
 
     perc.predict_element(1)
-    cnn.predict_element(1
-                        )
+    cnn.predict_element(1)
     print('Точности\n перцептрон: {}\n простая сверточная: {}\n vgg16: {}'
           .format(p_a, c_a, v_a))
 
